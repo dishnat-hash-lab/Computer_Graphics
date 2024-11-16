@@ -131,3 +131,5 @@ int main(int argc, char **argv) {
     Init();
     glutMainLoop();
 }
+// g++ boundary_fill_L_shape_4.cpp -o boundary_fill_L_shape_4 -lGL -lGLU -lglut
+// ./boundary_fill_L_shape_4

@@ -137,3 +137,5 @@ int main(int argc, char **argv) {
     Init();
     glutMainLoop();
 }
+// g++ l_shape_boundary_fill_8_connected.cpp -o l_shape_boundary_fill_8_connected -lGL -lGLU -lglut
+// ./l_shape_boundary_fill_8_connected

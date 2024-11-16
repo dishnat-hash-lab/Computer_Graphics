@@ -50,8 +50,6 @@ void midpointCircle() {
 void initOpenGL() {
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f); // Set background color to white
     glClear(GL_COLOR_BUFFER_BIT);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
     gluOrtho2D(0, 500, 0, 500); // Set the 2D orthogonal view
 }
 

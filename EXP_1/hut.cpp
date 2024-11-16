@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);  
     glutInitWindowSize(500, 500);  
     glutInitWindowPosition(100, 100);  
-    glutCreateWindow("ANANYA SAINI-Hut Drawing");  
+    glutCreateWindow("Dishant SAINI-Hut Drawing");  
     init();  
     glutDisplayFunc(display);  
     glutMainLoop();  

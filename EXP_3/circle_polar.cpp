@@ -26,9 +26,6 @@ void drawCircle() {
 void initOpenGL() {
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);  // Set background color to white
     glClear(GL_COLOR_BUFFER_BIT);
-
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
     gluOrtho2D(0, 500, 0, 500);  // Set the 2D orthogonal view
 }
 
@@ -45,7 +42,7 @@ int main(int argc, char** argv) {
     // Initialize GLUT
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);  // Use single buffer and RGB color mode
-    glutInitWindowSize(500, 500);  // Set window size
+    glutInitWindowSize(200, 200);  // Set window size
     glutInitWindowPosition(100, 100);  // Set window position
     glutCreateWindow("Circle using Polar Equations");
 

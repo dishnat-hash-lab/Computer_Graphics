@@ -91,5 +91,5 @@ int main(int argc, char** argv) {
 }
 
 
-//g++ bresenham_line_red.cpp -o bresenham_line_red -lGL -lGLU -lglut
-//./bresenham_line_red
+//g++ bresenham_line.cpp -o bresenham_line -lGL -lGLU -lglut
+//./bresenham_line

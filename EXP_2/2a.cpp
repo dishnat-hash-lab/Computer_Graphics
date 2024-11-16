@@ -2,20 +2,17 @@
 #include <iostream>
 
 // Line parameters
-float m = 1.0f;  // Slope
-float c = 0.0f;  // Y-intercept
+float m = 1.0f;  // Slope 45 degree 
+float c = 0.0f;  // Y-intercept , value of y when x=0 
 
 // Function to initialize OpenGL settings
 void initOpenGL() {
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);  // Set background color (black)
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    gluOrtho2D(-1.0, 1.0, -1.0, 1.0);  // Set up 2D orthographic projection
 }
 
 // Function to display the line
 void display() {
-    glClear(GL_COLOR_BUFFER_BIT);  // Clear the screen
+    glClear(GL_COLOR_BUFFER_BIT);  // Clear the screen with the color set int initOpenGL()
 
     glColor3f(1.0f, 0.0f, 0.0f);  // Set the line color (red)
 
@@ -50,7 +47,7 @@ int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);  // Use double buffering and RGB color mode
     glutInitWindowSize(500, 500);  // Set initial window size
-    glutCreateWindow("Line Drawing: y = mx + c");
+    glutCreateWindow("Line Drawing");
 
     // Initialize OpenGL settings
     initOpenGL();

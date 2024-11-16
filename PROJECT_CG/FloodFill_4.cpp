@@ -136,3 +136,7 @@ int main(int argc, char **argv) {
     Init();
     glutMainLoop();
 }
+
+
+// g++ FloodFill_4.cpp -o FloodFill_4 -lGL -lGLU -lglut
+// ./FloodFill_4
